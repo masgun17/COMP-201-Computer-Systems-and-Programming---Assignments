@@ -1,0 +1,3 @@
+The method that I used, adding a limit to scanf() will not work for dynamically sized buffers.
+For such cases, we might try to use fgets() instead of scanf(). If the input to the fgets() is multiple lines,
+we might extract each line with sscanf().
